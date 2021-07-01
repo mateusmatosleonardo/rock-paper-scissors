@@ -8,3 +8,7 @@ h1{
     text-align: center;
     padding: 8px 0;
 }
+
+.player-options img{
+    max-width: 150px;
+}
