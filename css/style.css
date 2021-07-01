@@ -16,3 +16,8 @@ h1{
     opacity: 0.4;
     cursor: pointer;
 }
+
+.align{
+    /* para ficar um do lado do outro */
+    display: flex;
+}
