@@ -11,4 +11,7 @@ h1{
 
 .player-options img{
     max-width: 150px;
+    /* definindo opacidade */
+    opacity: 0.4;
+    cursor: pointer;
 }
