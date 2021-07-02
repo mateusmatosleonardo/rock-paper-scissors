@@ -17,6 +17,11 @@ h1{
     cursor: pointer;
 }
 
+.player-options,
+.enemy-options{
+    width: 50%;
+}
+
 .align{
     /* para ficar um do lado do outro */
     display: flex;
