@@ -1,5 +1,7 @@
 var elementos = document.querySelectorAll('.player-options div > img');
 
+var playerOpt = "";
+
     /* chamando função de reset */
     function resetOpacityPlayer(){
         for(var i = 0; i < elementos.length; i++){
