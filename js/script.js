@@ -1,1 +1,1 @@
-var elementos = document.querySelectorAll('.player-options div');
+var elementos = document.querySelectorAll('.player-options div > img');
