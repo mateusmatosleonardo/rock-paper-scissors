@@ -2,6 +2,15 @@ var elementos = document.querySelectorAll('.player-options div > img');
 
 var playerOpt = "";
 
+var inimigoOpt = "";
+
+    function resetInimigo(){
+        const enemyOptions = document.querySelectorAll('.enemy-options div');
+        for(var i = 0; i < enemyOptions.length; i++){
+            enemyOptions[i].childNodes[0].style.opacity = 0;
+        }
+    }
+
     function inimigoJogar(){
         /* o Math.random ele retorna pra gente um número entre 0 e 1 */
         /* depois multiplico por 3 para retornar 0, 1 e 2 */
@@ -9,11 +18,16 @@ var playerOpt = "";
         let rand = Math.floor(Math.random()*3);
         
         const enemyOptions = document.querySelectorAll('.enemy-options div');
+        resetInimigo();
             for(var i = 0; i < enemyOptions.length; i++){
                 if(i == rand){
                     enemyOptions[i].childNodes[0].style.opacity = 1;
+                    inimigoOpt = enemyOptions[i].childNodes[0].getAttribute('opt');
                 }
             }
+
+            alert(playerOpt);
+            alert(inimigoOpt);
     }
 
     /* chamando função de reset */
