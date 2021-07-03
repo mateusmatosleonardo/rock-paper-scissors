@@ -16,6 +16,5 @@ var playerOpt = "";
             resetOpacityPlayer();
             t.target.style.opacity = 1;
             playerOpt = t.target.getAttribute('opt');
-            alert(playerOpt);
         });
     }
