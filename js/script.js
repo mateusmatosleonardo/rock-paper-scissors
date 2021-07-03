@@ -7,7 +7,13 @@ var playerOpt = "";
         /* depois multiplico por 3 para retornar 0, 1 e 2 */
         /* o Math.floor arredonda esse número */
         let rand = Math.floor(Math.random()*3);
-            alert(rand);
+        
+        const enemyOptions = document.querySelectorAll('.enemy-options div');
+            for(var i = 0; i < enemyOptions.length; i++){
+                if(i == rand){
+                    enemyOptions[i].childNodes[0].style.opacity = 1;
+                }
+            }
     }
 
     /* chamando função de reset */
