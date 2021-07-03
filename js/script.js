@@ -2,6 +2,14 @@ var elementos = document.querySelectorAll('.player-options div > img');
 
 var playerOpt = "";
 
+    function inimigoJogar(){
+        /* o Math.random ele retorna pra gente um número entre 0 e 1 */
+        /* depois multiplico por 3 para retornar 0, 1 e 2 */
+        /* o Math.floor arredonda esse número */
+        let rand = Math.floor(Math.random()*3);
+            alert(rand);
+    }
+
     /* chamando função de reset */
     function resetOpacityPlayer(){
         for(var i = 0; i < elementos.length; i++){
@@ -16,7 +24,7 @@ var playerOpt = "";
             resetOpacityPlayer();
             t.target.style.opacity = 1;
             playerOpt = t.target.getAttribute('opt');
-            
+
             inimigoJogar();
         });
     }
