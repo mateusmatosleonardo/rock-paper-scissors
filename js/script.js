@@ -7,7 +7,7 @@ var inimigoOpt = "";
     function resetInimigo(){
         const enemyOptions = document.querySelectorAll('.enemy-options div');
         for(var i = 0; i < enemyOptions.length; i++){
-            enemyOptions[i].childNodes[0].style.opacity = 0;
+            enemyOptions[i].childNodes[0].style.opacity = 0.3;
         }
     }
 
